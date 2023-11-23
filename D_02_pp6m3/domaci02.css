@@ -1,0 +1,37 @@
+body {
+  background-color: rgb(173, 173, 219);
+}
+
+h2 {
+  text-align: center;
+  color: rgb(130, 43, 164);
+}
+
+.par13 {
+  color: rgb(19, 57, 70);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+p {
+  color: rgb(48, 116, 212);
+}
+
+#vestacka {
+  color: red;
+}
+
+.link:not(.nohover):hover{
+  background-color: transparent 
+}
+
+a:hover {
+  background-color: green;
+}
+
+.brain {
+  width: 500px;
+  height: 300px;
+  border-style: double;
+  border-color: rgb(118, 15, 106);
+}

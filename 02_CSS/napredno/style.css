@@ -1,0 +1,67 @@
+p {
+  color: gray;
+}
+
+h3, h4 {
+  color: orange;
+}
+
+.desno_poravnanje {
+  text-align: right;
+}
+
+.crveni_tekst {
+  color: red;
+}
+
+.drugi, #treci {
+  background-color: yellow;
+  
+}
+
+#treci {
+  
+  font-style: italic;
+}
+
+/* Prioritet selektora element < klasa < */
+li {
+  color: limegreen;
+}
+
+.stavka {
+  color: blue;
+}
+
+#prva_stavka {
+  color: orange;
+}
+
+/* Kombinator raymak - svi potomci u div tagu koji su p tag*/
+div p {
+  color: aquamarine;
+}
+
+a {
+  color: blue;
+} 
+
+a:visited {
+  color: brown;
+}
+
+p:first-child {
+  font-weight: bold;
+}
+
+li:nth-child(3n) {
+  font-weight: bold;
+}
+
+li:nth-child(3) {
+  text-decoration: line-through;
+}
+
+li:hover {
+  background-color: aquamarine;
+}
