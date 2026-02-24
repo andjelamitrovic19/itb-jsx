@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Memory Game</title>
+</head>
+<body>
+<div id="glavni-div">
+  <div id="leviDeo">
+    <div id="naslov">
+      <h1>IGRA MEMORIJE</h1>
+      <div id="brojac">Vreme: 0s</div>
+      <p></p>
+    </div>
+    <input type="text" id="korisnicko-ime" placeholder="Unesite korisničko ime">
+    <br>
+    <div>
+      <label><input type="radio" name="level" value="lako">Lako</label>
+      <label><input type="radio" name="level" value="srednje">Srednje</label>
+      <label><input type="radio" name="level" value="tesko">Teško</label>
+      <label><input type="radio" name="level" value="ekspert">Ekspert</label>
+    </div>
+
+    <div id="tabla-igre"></div>
+  </div>
+
+  <div id="desniDeo">
+    <h1>NAJBOLJI REZULTATI</h1>
+    <button class="nivo-dugme" onclick="prikaziRezultateZaNivo('lako')">Lako</button>
+    <button class="nivo-dugme" onclick="prikaziRezultateZaNivo('srednje')">Srednje</button>
+    <button class="nivo-dugme" onclick="prikaziRezultateZaNivo('tesko')">Teško</button>
+    <button class="nivo-dugme" onclick="prikaziRezultateZaNivo('ekspert')">Ekspert</button>
+
+    <div id="rezultati"></div>
+
+  </div>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>

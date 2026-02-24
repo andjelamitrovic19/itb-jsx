@@ -1,0 +1,173 @@
+html {
+  width: auto;
+  height: 100%;
+  background: linear-gradient(325deg,  #c4bcc6 0%,#bc9abc 30%,#a57095 70%, #6666a1 100%);
+  background-repeat: repeat;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: auto;
+}
+
+h1 {
+  color: #d7dfe4;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#glavni-div{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#leviDeo {
+  padding: 10px;
+  flex: 50%;
+}
+
+#desniDeo {
+  padding: 10px;
+  flex: 50%;
+}
+
+#naslov {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  #glavni-div{
+    display: flex;
+    flex-direction: column;
+  }
+  #leviDeo, #desniDeo {
+    flex: 100%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  button {
+    width: 50%;
+  }
+}
+
+#korisnicko-ime {
+  padding: 10px;
+  margin: 5px;
+  border: 2px solid #929fa7;
+  border-radius: 5px;
+  font-size: 1em;
+  color: #344755;
+  outline: none;
+}
+
+#korisnicko-ime::placeholder {
+  color: #95a5a6;
+}
+
+#rezultati{
+  margin: 10px 0px;
+}
+
+button {
+  margin: 2px 0px;
+  padding: 10px 20px;
+  background-color: #523d8d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #625186;
+}
+
+.nivo-dugme {
+  padding: 10px 20px;
+  background-color: #523d8d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.nivo-dugme:hover {
+  background-color: #625186;
+}
+
+.kartica {
+  width: 50px;
+  height: 50px;
+  background-color: #691159;
+  margin: 5px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s ease-in-out;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.okrenuta {
+  background-color: #98a6b8;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.poklapajuca {
+  background-color: #382565;
+  cursor: default;
+}
+
+.kartica:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3));
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.kartica:hover:after {
+  opacity: 1;
+}
+
+#brojac {
+  font-size: 1.2em;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+table {
+  border-collapse: collapse;
+} 
+
+th, td {
+  border: 2px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #a481ad;
+  color: white;
+}
+
+tr {
+  background-color: #cecece;
+}
